@@ -62,7 +62,7 @@
          * @returns {{start: number, length: (*|Number|number|length)}}
          */
         this.calcKeywordInfo = function(str, cursorPosition, separator) {
-            var strs = str.split(' ');
+            var strs = str.split(separator);
             var length = strs.length;
             var currPosition = 0;
             for (var index = 0; index < length; index++) {
