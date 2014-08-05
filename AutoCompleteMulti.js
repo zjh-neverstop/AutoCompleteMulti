@@ -463,13 +463,13 @@
 
                     }
 
-                    //以下两个判断语句用来将当前选中项置于div的可视范围内
-                    if (($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 4) * (autoThisObj.index + 1) > autoThisObj.commonObj.jResults.scrollTop() + parseInt(autoThisObj.commonObj.results.style.height)) {
-                        autoThisObj.commonObj.jResults.scrollTop(($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 4) * (autoThisObj.index + 1) - parseInt(autoThisObj.commonObj.results.style.height));
+                    //以下两个判断语句用来将当前选中项置于div的可视范围内  padding*2+borderwidth = 2*2+1=5
+                    if (($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 5) * (autoThisObj.index + 1) > autoThisObj.commonObj.jResults.scrollTop() + parseInt(autoThisObj.commonObj.results.style.height)) {
+                        autoThisObj.commonObj.jResults.scrollTop(($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 5) * (autoThisObj.index + 1) - parseInt(autoThisObj.commonObj.results.style.height));
 
                     }
-                    if (($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 4) * (autoThisObj.index) < autoThisObj.commonObj.jResults.scrollTop()) {
-                        autoThisObj.commonObj.jResults.scrollTop(($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 4) * (autoThisObj.index));
+                    if (($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 5) * (autoThisObj.index) < autoThisObj.commonObj.jResults.scrollTop()) {
+                        autoThisObj.commonObj.jResults.scrollTop(($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 5) * (autoThisObj.index));
 
                     }
                     return false;
@@ -508,11 +508,11 @@
                     }
 
                     //以下两个判断语句用来将当前选中项置于div的可视范围内
-                    if (($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 4) * (autoThisObj.index + 1) > autoThisObj.commonObj.jResults.scrollTop() + parseInt(autoThisObj.commonObj.results.style.height)) {
-                        autoThisObj.commonObj.jResults.scrollTop(($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 4) * (autoThisObj.index + 1) - parseInt(autoThisObj.commonObj.results.style.height));
+                    if (($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 5) * (autoThisObj.index + 1) > autoThisObj.commonObj.jResults.scrollTop() + parseInt(autoThisObj.commonObj.results.style.height)) {
+                        autoThisObj.commonObj.jResults.scrollTop(($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 5) * (autoThisObj.index + 1) - parseInt(autoThisObj.commonObj.results.style.height));
                     }
-                    if (($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 4) * (autoThisObj.index) < autoThisObj.commonObj.jResults.scrollTop()) {
-                        autoThisObj.commonObj.jResults.scrollTop(($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 4) * (autoThisObj.index));
+                    if (($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 5) * (autoThisObj.index) < autoThisObj.commonObj.jResults.scrollTop()) {
+                        autoThisObj.commonObj.jResults.scrollTop(($(autoThisObj.commonObj.results.childNodes[autoThisObj.index]).height() + 5) * (autoThisObj.index));
                     }
                     return false;
                 }
