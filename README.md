@@ -9,9 +9,8 @@ AutoCompleteMulti
 多关键词匹配时，自动识别当前正在输入的关键词，当用户选中某个匹配项后，自动将光标定位在该关键词后
 面
 
-//方式1：静态数据集
-
-    var staticDatas = ["asd","axcv","qwerfd","dfghj","cvbnm","bbghty","ertgb","trefgc","cssdavb","abcdefg","trefgc","cssdavb","abcdefg"];
+    var staticDatas = ["asd","axcv","qwerfd","dfghj","cvbnm","bbghty","ertgb",
+    		       "trefgc","cssdavb","abcdefg","trefgc","cssdavb","abcdefg"];
         /*
 		var autoCompleteOption = {
                         controlId: "inpt",            //实现自动完成的控件ID
