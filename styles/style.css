@@ -26,3 +26,11 @@
     line-height:24px;
     font-weight:bolder;
 }
+.resultsCss{ /*匹配结果集容器样式*/
+    position:absolute;
+    overflow-y:auto; 
+    overflow-x:hidden; 
+    display:none;
+    border:solid 1px gray; 
+    background-color:#F0FFFF;
+}
