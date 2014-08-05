@@ -324,11 +324,14 @@
                 else if (autoThisObj.serverEnabled == "true") {  //服务器端获取数据
 
                     autoThisObj.getAjaxDatas(autoThisObj, keyword);
+                    return;
                 }
-                else if (autoThisObj.useStaticDatas == "true" && autoThisObj.datas.length > 0) {
-                    autoThisObj.generateHtml(autoThisObj, autoThisObj.datas);
+                
+                if(!(autoDatas instanceof Array) && autoThisObj.useStaticDatas == "true" && autoThisObj.datas.length > 0){
+					
+					autoThisObj.generateHtml(autoThisObj, autoThisObj.datas);
                     autoThisObj.navigate(autoThisObj);
-                }
+				}
 
 
 
@@ -567,7 +570,13 @@
                     }
 
                     autoThisObj.navigate(autoThisObj);
-                }  //end success()
+                },  //end success()
+                error:function(){
+					if (autoThisObj.useStaticDatas == "true" && autoThisObj.datas.length > 0) {
+                        autoThisObj.generateHtml(autoThisObj, autoThisObj.datas);
+						autoThisObj.navigate(autoThisObj);
+                    }
+				} //end error
             }); //end ajax()
         },
 
