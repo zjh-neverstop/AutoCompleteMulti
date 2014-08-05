@@ -6,6 +6,7 @@
     width:100%;
     background-color:white;
     border-top:solid 1px whitesmoke;
+    overflow:hidden;
 }
 .item_even
 {
@@ -15,6 +16,7 @@
     width:100%;
     background-color:white;
     border-top:solid 1px whitesmoke;
+    overflow:hidden;
 }
 .chooseItem{
 	background-color: rgba(232, 232, 232, 0.7);/*#008B8B;*/
@@ -25,6 +27,7 @@
     width:100%;
     line-height:24px;
     font-weight:bolder;
+    overflow:hidden;
 }
 .resultsCss{ /*匹配结果集容器样式*/
     position:absolute;
