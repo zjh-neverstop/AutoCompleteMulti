@@ -9,8 +9,11 @@ AutoCompleteMulti
 多关键词匹配时，自动识别当前正在输入的关键词，当用户选中某个匹配项后，自动将光标定位在该关键词后
 面
 
-    var staticDatas = ["asd","axcv","qwerfd","dfghj","cvbnm","bbghty","ertgb",
-    		       "trefgc","cssdavb","abcdefg","trefgc","cssdavb","abcdefg"];
+效果如下：
+
+![image](https://raw.githubusercontent.com/zjh-neverstop/AutoCompleteMulti/master/autoCompleteMulti.gif)
+
+    var staticDatas = ["四大名著","四大名著-西游记","四大名著-三国演义","四大名著-水浒传","四大名著-红楼梦","四大名捕","四大名捕-冷血","四大名捕-无情","四大名捕-追命","四大名捕-铁手"];
         /*
 		var autoCompleteOption = {
                         controlId: "inpt",            //实现自动完成的控件ID
@@ -34,6 +37,8 @@ AutoCompleteMulti
                         resultDivId: "tipList",			//显示匹配结果的div的id
                         circleChoose: "true",			//是否开启循环选择
 						useStaticDatas:"true",          //是否使用静态数据
+						hasMultiKeyword: "true",        //是否开启多关键词自动完成
+						separator:",",					//设置关键词分隔符
 						datas:staticDatas,
                         getCompleteDatas: function(){	//自定义数据获取函数
                             var datas = null;
