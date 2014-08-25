@@ -9,13 +9,15 @@
     <body>
         <div>
             <label for="inpt">请输入：</label><input type="text" id="inpt" />
+			多个关键词以英文逗号分割
         </div>
         <div id="tipList" class="resultsCss">
         </div>
         <script type="text/javascript">
         //方式1：静态数据集
 		//测试数据
-        var staticDatas = ["asd","axcv","qwerfd","dfghj","cvbnm","bbghty","ertgb","trefgc","cssdavb","abcdefg","trefgc","cssdavb","abcdefg"];
+        //var staticDatas = ["asd","axcv","qwerfd","dfghj","cvbnm","bbghty","ertgb","trefgc","cssdavb","abcdefg","trefgc","cssdavb","abcdefg"];
+		var staticDatas = ["四大名著","四大名著-西游记","四大名著-三国演义","四大名著-水浒传","四大名著-红楼梦","四大名捕","四大名捕-冷血","四大名捕-无情","四大名捕-追命","四大名捕-铁手"];
         /*
 		var autoCompleteOption = {
                         controlId: "inpt",            //实现自动完成的控件ID
@@ -39,6 +41,8 @@
                         resultDivId: "tipList",			//显示匹配结果的div的id
                         circleChoose: "true",			//是否开启循环选择
 						useStaticDatas:"true",          //是否使用静态数据
+						hasMultiKeyword: "true",        //是否开启多关键词自动完成
+						separator:",",					//设置关键词分隔符
 						datas:staticDatas,
                         getCompleteDatas: function(){	//自定义数据获取函数
                             var datas = null;

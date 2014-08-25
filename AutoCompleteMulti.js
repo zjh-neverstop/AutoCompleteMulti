@@ -245,11 +245,11 @@
          */
         this.getKeyword = function() {
             if (this.hasMultiKeyword == "true") {
-                this.keywordHandler.input = $.trim(this.commonObj.jControl.val());
+                this.keywordHandler.input = this.commonObj.jControl.val();
                 return this.keywordHandler.getCurrentKeyword(this.commonObj.control);
             }
             else {
-                return $.trim(this.commonObj.jControl.val());
+                return this.commonObj.jControl.val();
             }
         } //end getKeyword
 
@@ -303,7 +303,7 @@
                 autoThisObj.index = -1;
                 autoThisObj.commonObj.results.scrollTop = 0;
 
-                autoThisObj.keywordHandler.input = $.trim(autoThisObj.commonObj.jControl.val());
+                autoThisObj.keywordHandler.input = autoThisObj.commonObj.jControl.val();
                 //alert(commonObj.control.id);
                 var keyword = autoThisObj.getKeyword();
 
@@ -523,7 +523,7 @@
 
                     if (autoThisObj.hasMultiKeyword == "true") {
                         //autoThisObj.commonObj.jControl.val(autoThisObj.keywordHandler.getCompleteInputString(autoThisObj.commonObj.control, $.trim(autoThisObj.commonObj.jControl.val()), autoThisObj.commonObj.results.childNodes[autoThisObj.index].innerHTML));
-                        autoThisObj.keywordHandler.setAutoCompleteString(autoThisObj.commonObj.control, $.trim(autoThisObj.commonObj.jControl.val()), autoThisObj.commonObj.results.childNodes[autoThisObj.index].innerHTML);
+                        autoThisObj.keywordHandler.setAutoCompleteString(autoThisObj.commonObj.control, autoThisObj.commonObj.jControl.val(), autoThisObj.commonObj.results.childNodes[autoThisObj.index].innerHTML);
                     }
                     else {
                         autoThisObj.commonObj.jControl.val(autoThisObj.commonObj.results.childNodes[autoThisObj.index].innerHTML);
@@ -631,7 +631,7 @@
                         autoThisObj.commonObj.jResults.focus();
                         if (autoThisObj.hasMultiKeyword == "true") {
                             //autoThisObj.commonObj.jControl.val(autoThisObj.keywordHandler.getCompleteInputString(autoThisObj.commonObj.control, $.trim(autoThisObj.commonObj.jControl.val()), $(this).html()));
-                            autoThisObj.keywordHandler.setAutoCompleteString(autoThisObj.commonObj.control, $.trim(autoThisObj.commonObj.jControl.val()), $(this).html());
+                            autoThisObj.keywordHandler.setAutoCompleteString(autoThisObj.commonObj.control, autoThisObj.commonObj.jControl.val(), $(this).html());
                             autoThisObj.clearResults(autoThisObj);
                             return false;
                         }

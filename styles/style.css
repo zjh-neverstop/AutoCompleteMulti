@@ -1,22 +1,24 @@
 .item_odd
 {
-    line-height:24px;
+    line-height:20px;
     height:24px;
     padding: 2px;
     width:100%;
     background-color:white;
     border-top:solid 1px whitesmoke;
     overflow:hidden;
+	font-size: 12px;
 }
 .item_even
 {
-    line-height:24px;
+    line-height:20px;
     height:24px;
     padding: 2px;
     width:100%;
     background-color:white;
     border-top:solid 1px whitesmoke;
     overflow:hidden;
+	font-size: 12px;
 }
 .chooseItem{
 	background-color: rgba(232, 232, 232, 0.7);/*#008B8B;*/
@@ -25,9 +27,10 @@
     height:24px;
     padding: 2px;
     width:100%;
-    line-height:24px;
+    line-height:20px;
     font-weight:bolder;
     overflow:hidden;
+	font-size: 12px;
 }
 .resultsCss{ /*匹配结果集容器样式*/
     position:absolute;
